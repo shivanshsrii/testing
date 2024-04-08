@@ -1,1 +1,79 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShare Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>BookShare Website</h1>
+        <div class="login-section">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="profile-section">
+            <h2>Profile Setup</h2>
+            <form id="profileForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required><br><br>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                <button type="submit">Save Profile</button>
+            </form>
+        </div>
+        <div class="buy-sell-section">
+            <h2>Buy Section</h2>
+            <form id="buyForm">
+                <label for="bookName">Book Name:</label>
+                <input type="text" id="bookName" name="bookName" required><br><br>
+                <label for="year">Year of Publication:</label>
+                <input type="text" id="year" name="year" required><br><br>
+                <label for="price">Price Bought:</label>
+                <input type="text" id="price" name="price" required><br><br>
+                <button type="submit">Add to Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Add login functionality here
+            alert('Login functionality not implemented yet');
+        });
+
+        document.getElementById('profileForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Add profile setup functionality here
+            alert('Profile setup functionality not implemented yet');
+        });
+
+        document.getElementById('buyForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Add buy functionality here
+            alert('Buy functionality not implemented yet');
+        });
+    </script>
+</body>
+
+</html>
